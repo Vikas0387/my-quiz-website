@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Quiz</title>
+<style>
+:root {
+    --primary-color: #00abf0;
+    --secondary-color: #09001d;
+    --text-color: #fff;
+    --neutral-light: rgba(255, 255, 255, 0.2);
+    --neutral-dark: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(9, 0, 29, 0.8); 
+    backdrop-filter: blur(10px); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--neutral-dark);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--primary-color); 
+}
+
+.main {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: transparent; 
+    padding: 50px;
+    border-radius: 1rem; 
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 171, 240, 0.5);
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color); 
+    background: linear-gradient(45deg, transparent, var(--primary-color), transparent);
+    border-radius: 6px;
+    padding: 5px 0;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: var(--neutral-light); }
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center; 
+        padding: 15px 20px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar a {
+        margin: 0 15px; 
+    }
+
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+    .about-section p {
+        font-size: 1rem;
+    }
+}    </style>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Nabin's Quiz</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="about-section">
+            <div class="container">
+                <h1>About My Quiz</h1>
+                <p>
+                  My Quiz is a fun and interactive online quiz game that challenges your knowledge across various topics. It offers instant feedback on your answers, keeps track of your score, and makes learning engaging and enjoyable.
+                </p>
+                <p>
+                    You can challenge yourself with multiple-choice questions, follow the quiz guide, and improve your knowledge with every attempt.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
